@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .contenedor{
+        width: 100%;
+        max-width: 900px;
+        border: 2px solid #333;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 15px;
+
+    }
+
+    .logotipo{
+        width: 120px;
+        height: 80px;
+        border: 2px solid #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .logotipo span{
+        background-color: #ffffff;
+        padding: 2px 6px;
+
+    }
+
+    .navegador{
+        display: flex;
+        border: 2px solid #333;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .nav-item{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        border-right: 2px solid #333;
+        background-color: #fff;
+
+    }
+
+    .nav-item:last-child{
+        border-right: none;
+    }
+
+    .nav-intem.active {
+        background-color: #349834;
+        color: white;
+    
+    }
+</style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="Logotipo">
+                <span>Logotipo</span>
+            </div>
+
+            <nav class="navegador">
+                <a href="#" class="nav-item">One</a>
+                <a href="#" class="nav-item">Two</a>
+                <a href="#" class="nav-item">Three</a>
+            </nav>
+        </header>
+
+        <div class="main-body">
+            <main class="contenido-principal">
+                contenido
+            </main>
+            <aside class="contenido-lateral">
+                contenido
+            </aside>
+        </div>
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+</body>
+</html>
